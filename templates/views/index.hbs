@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+        {{>header}}
+        <p>Use this page to check Weather</p>
+        <form>
+            <input id="searchbar" type="text" placeholder="Enter Location">
+            <button>Submit</button>
+        </form>
+        <p id="result"></p>
+        {{>footer}}
+        <script src="JS/app.js"></script>
+    </body>
+</html>
