@@ -4,7 +4,7 @@ const result = document.querySelector('#result');
 
 button.addEventListener('click',(e)=>{
     e.preventDefault();
-    const url = "http://localhost:3000/weather?address="+searched.value;
+    const url = "/weather?address="+searched.value;
     fetch(url)
     .then((res)=>res.json())
     .then(data=>{

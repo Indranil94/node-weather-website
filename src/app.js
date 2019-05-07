@@ -8,6 +8,8 @@ const dir = path.join(__dirname,'../public');
 const viewdir = path.join(__dirname,'../templates/views');
 const partialdir = path.join(__dirname,'../templates/partials')
 
+const port = process.env.PORT||3000;
+
 const app = express();
 
 app.use(express.static(dir));
@@ -85,6 +87,6 @@ app.get("*",(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log("Server up and running");
 })
