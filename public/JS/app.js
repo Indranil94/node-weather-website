@@ -7,6 +7,7 @@ button.addEventListener('click',(e)=>{
     e.preventDefault();
     const url = "/weather?address="+searched.value;
     location_text.textContent = "Loading..."
+    result.textContent = "";
     fetch(url)
     .then((res)=>res.json())
     .then(data=>{
