@@ -88,18 +88,3 @@ app.get("*",(req,res)=>{
 app.listen(3000,()=>{
     console.log("Server up and running");
 })
-
-// app.get("",(req,res)=>{
-//     res.send('<h1>Hello from the homepage</h1>');
-// })
-
-// app.get("/about",(req, res)=>{
-//     res.send('<h1>This is about creating server APIs </h1>');
-// })
-
-// app.get("/help",(req,res)=>{
-//     res.send({
-//         name: 'Indranil',
-//         age: 27
-//     });
-// })
